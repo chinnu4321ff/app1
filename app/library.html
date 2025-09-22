@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Library • ShikshaSetu</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    </head>
+    <body style="padding-top: 80px;">
+        <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="home.html">
+                    <div class="logo-container"><div class="logo-icon">S</div></div>
+                    <span class="brand-text">ShikshaSetu</span>
+                </a>
+                <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="home.html"><i class="fas fa-home"></i> Home</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="library.html"><i class="fas fa-book"></i> Library</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html"><i class="fas fa-users"></i> About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h1 class="home-title library-title" style="font-size:2.2rem;">Content Library</h1>
+                <p class="home-subtitle">Choose your class and subject</p>
+                <div class="section-accent mx-auto"></div>
+            </div>
+            
+            <!-- Interactive Class Selector -->
+            <div class="row mb-5">
+                <div class="col-md-12 text-center">
+                    <div class="class-selector">
+                        <div class="btn-group class-buttons" role="group">
+                            <button class="btn class-btn active" data-class="6">Class 6</button>
+                            <button class="btn class-btn" data-class="7">Class 7</button>
+                            <button class="btn class-btn" data-class="8">Class 8</button>
+                            <button class="btn class-btn" data-class="9">Class 9</button>
+                            <button class="btn class-btn" data-class="10">Class 10</button>
+                            <button class="btn class-btn" data-class="11">Class 11</button>
+                            <button class="btn class-btn" data-class="12">Class 12</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interactive Subject Cards -->
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <div class="card h-100 shadow-sm subject-card subject-math interactive-card" data-subject="math">
+                        <div class="card-body text-center">
+                            <div class="subject-icon-wrapper">
+                                <i class="fas fa-square-root-alt fa-3x mb-3"></i>
+                                <div class="progress-ring">
+                                    <svg class="progress-ring-svg" width="60" height="60">
+                                        <circle class="progress-ring-circle" stroke="#fff" stroke-width="3" fill="transparent" r="25" cx="30" cy="30"/>
+                                    </svg>
+                                    <span class="progress-text">85%</span>
+                                </div>
+                            </div>
+                            <h5 class="subject-title">Mathematics</h5>
+                            <p class="subject-desc">Algebra, Geometry, Statistics</p>
+                            <div class="subject-stats">
+                                <span class="stat"><i class="fas fa-book"></i> 45 Lessons</span>
+                                <span class="stat"><i class="fas fa-question-circle"></i> 200+ Quizzes</span>
+                            </div>
+                            <div class="card-hover-content">
+                                <button class="btn btn-light btn-sm explore-btn">Explore Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card h-100 shadow-sm subject-card subject-science interactive-card" data-subject="science">
+                        <div class="card-body text-center">
+                            <div class="subject-icon-wrapper">
+                                <i class="fas fa-flask fa-3x mb-3"></i>
+                                <div class="progress-ring">
+                                    <svg class="progress-ring-svg" width="60" height="60">
+                                        <circle class="progress-ring-circle" stroke="#fff" stroke-width="3" fill="transparent" r="25" cx="30" cy="30"/>
+                                    </svg>
+                                    <span class="progress-text">72%</span>
+                                </div>
+                            </div>
+                            <h5 class="subject-title">Science</h5>
+                            <p class="subject-desc">Physics, Chemistry, Biology</p>
+                            <div class="subject-stats">
+                                <span class="stat"><i class="fas fa-book"></i> 38 Lessons</span>
+                                <span class="stat"><i class="fas fa-question-circle"></i> 150+ Quizzes</span>
+                            </div>
+                            <div class="card-hover-content">
+                                <button class="btn btn-light btn-sm explore-btn">Explore Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card h-100 shadow-sm subject-card subject-social interactive-card" data-subject="social">
+                        <div class="card-body text-center">
+                            <div class="subject-icon-wrapper">
+                                <i class="fas fa-globe-asia fa-3x mb-3"></i>
+                                <div class="progress-ring">
+                                    <svg class="progress-ring-svg" width="60" height="60">
+                                        <circle class="progress-ring-circle" stroke="#fff" stroke-width="3" fill="transparent" r="25" cx="30" cy="30"/>
+                                    </svg>
+                                    <span class="progress-text">68%</span>
+                                </div>
+                            </div>
+                            <h5 class="subject-title">Social Science</h5>
+                            <p class="subject-desc">History, Geography, Civics</p>
+                            <div class="subject-stats">
+                                <span class="stat"><i class="fas fa-book"></i> 42 Lessons</span>
+                                <span class="stat"><i class="fas fa-question-circle"></i> 180+ Quizzes</span>
+                            </div>
+                            <div class="card-hover-content">
+                                <button class="btn btn-light btn-sm explore-btn">Explore Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card h-100 shadow-sm subject-card subject-english interactive-card" data-subject="english">
+                        <div class="card-body text-center">
+                            <div class="subject-icon-wrapper">
+                                <i class="fas fa-language fa-3x mb-3"></i>
+                                <div class="progress-ring">
+                                    <svg class="progress-ring-svg" width="60" height="60">
+                                        <circle class="progress-ring-circle" stroke="#fff" stroke-width="3" fill="transparent" r="25" cx="30" cy="30"/>
+                                    </svg>
+                                    <span class="progress-text">91%</span>
+                                </div>
+                            </div>
+                            <h5 class="subject-title">English</h5>
+                            <p class="subject-desc">Grammar, Literature, Writing</p>
+                            <div class="subject-stats">
+                                <span class="stat"><i class="fas fa-book"></i> 35 Lessons</span>
+                                <span class="stat"><i class="fas fa-question-circle"></i> 120+ Quizzes</span>
+                            </div>
+                            <div class="card-hover-content">
+                                <button class="btn btn-light btn-sm explore-btn">Explore Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Access Section -->
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="quick-access-section">
+                        <h4 class="text-center mb-4">Quick Access</h4>
+                        <div class="row">
+                            <div class="col-md-4 mb-3">
+                                <div class="quick-access-card">
+                                    <i class="fas fa-download"></i>
+                                    <h6>Download Offline</h6>
+                                    <p>Access lessons without internet</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="quick-access-card">
+                                    <i class="fas fa-trophy"></i>
+                                    <h6>Track Progress</h6>
+                                    <p>Monitor your learning journey</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="quick-access-card">
+                                    <i class="fas fa-users"></i>
+                                    <h6>Study Groups</h6>
+                                    <p>Learn with friends</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        
+        <script>
+            // Class selector functionality
+            document.querySelectorAll('.class-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    document.querySelectorAll('.class-btn').forEach(b => b.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    // Add ripple effect
+                    const ripple = document.createElement('span');
+                    ripple.classList.add('ripple');
+                    this.appendChild(ripple);
+                    
+                    setTimeout(() => {
+                        ripple.remove();
+                    }, 600);
+                });
+            });
+
+            // Interactive subject cards
+            document.querySelectorAll('.interactive-card').forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-15px) scale(1.02)';
+                    this.style.boxShadow = '0 20px 50px rgba(0,0,0,0.3)';
+                    
+                    // Animate progress ring
+                    const progressText = this.querySelector('.progress-text');
+                    const progressCircle = this.querySelector('.progress-ring-circle');
+                    const percentage = parseInt(progressText.textContent);
+                    
+                    // Animate the circle
+                    const circumference = 2 * Math.PI * 25;
+                    const offset = circumference - (percentage / 100) * circumference;
+                    progressCircle.style.strokeDasharray = circumference;
+                    progressCircle.style.strokeDashoffset = circumference;
+                    progressCircle.style.transition = 'stroke-dashoffset 1s ease-in-out';
+                    progressCircle.style.strokeDashoffset = offset;
+                });
+
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0) scale(1)';
+                    this.style.boxShadow = '0 5px 20px rgba(0,0,0,0.1)';
+                });
+
+                // Click effect
+                card.addEventListener('click', function() {
+                    this.style.transform = 'translateY(-10px) scale(0.98)';
+                    setTimeout(() => {
+                        this.style.transform = 'translateY(-15px) scale(1.02)';
+                    }, 150);
+                });
+            });
+
+            // Explore button effects
+            document.querySelectorAll('.explore-btn').forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    
+                    // Create explosion effect
+                    const card = this.closest('.interactive-card');
+                    const rect = card.getBoundingClientRect();
+                    
+                    for (let i = 0; i < 8; i++) {
+                        const particle = document.createElement('div');
+                        particle.className = 'explosion-particle';
+                        particle.style.position = 'fixed';
+                        particle.style.left = rect.left + rect.width/2 + 'px';
+                        particle.style.top = rect.top + rect.height/2 + 'px';
+                        particle.style.width = '6px';
+                        particle.style.height = '6px';
+                        particle.style.background = '#feca57';
+                        particle.style.borderRadius = '50%';
+                        particle.style.pointerEvents = 'none';
+                        particle.style.zIndex = '1000';
+                        
+                        const angle = (i / 8) * Math.PI * 2;
+                        const velocity = 100 + Math.random() * 50;
+                        const x = Math.cos(angle) * velocity;
+                        const y = Math.sin(angle) * velocity;
+                        
+                        document.body.appendChild(particle);
+                        
+                        particle.animate([
+                            { transform: 'translate(0, 0) scale(1)', opacity: 1 },
+                            { transform: `translate(${x}px, ${y}px) scale(0)`, opacity: 0 }
+                        ], {
+                            duration: 800,
+                            easing: 'cubic-bezier(0.25, 0.46, 0.45, 0.94)'
+                        }).onfinish = () => particle.remove();
+                    }
+                });
+            });
+
+            // Quick access cards animation
+            document.querySelectorAll('.quick-access-card').forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-8px)';
+                    this.style.boxShadow = '0 15px 35px rgba(0,0,0,0.2)';
+                });
+
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                    this.style.boxShadow = '0 5px 15px rgba(0,0,0,0.1)';
+                });
+            });
+
+            // Page load animation
+            window.addEventListener('load', function() {
+                const cards = document.querySelectorAll('.interactive-card');
+                cards.forEach((card, index) => {
+                    card.style.opacity = '0';
+                    card.style.transform = 'translateY(50px) rotateX(20deg)';
+                    
+                    setTimeout(() => {
+                        card.style.transition = 'all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275)';
+                        card.style.opacity = '1';
+                        card.style.transform = 'translateY(0) rotateX(0deg)';
+                    }, index * 200);
+                });
+            });
+
+            // Add cursor trail effect to library page
+            let mouseX = 0, mouseY = 0;
+            document.addEventListener('mousemove', function(e) {
+                mouseX = e.clientX;
+                mouseY = e.clientY;
+                
+                const trail = document.createElement('div');
+                trail.style.position = 'fixed';
+                trail.style.left = mouseX + 'px';
+                trail.style.top = mouseY + 'px';
+                trail.style.width = '15px';
+                trail.style.height = '15px';
+                trail.style.background = 'radial-gradient(circle, rgba(102, 126, 234, 0.8), transparent)';
+                trail.style.borderRadius = '50%';
+                trail.style.pointerEvents = 'none';
+                trail.style.zIndex = '9999';
+                trail.style.animation = 'cursorPulse 0.6s ease-out forwards';
+                
+                document.body.appendChild(trail);
+                
+                setTimeout(() => {
+                    trail.remove();
+                }, 600);
+            });
+
+            // Add rainbow text effect to title
+            function createRainbowText() {
+                const title = document.querySelector('.library-title');
+                if (title) {
+                    const text = title.textContent;
+                    title.innerHTML = '';
+                    
+                    for (let i = 0; i < text.length; i++) {
+                        const span = document.createElement('span');
+                        span.textContent = text[i];
+                        span.style.animation = `rainbow 2s ease-in-out ${i * 0.1}s infinite`;
+                        title.appendChild(span);
+                    }
+                }
+            }
+            createRainbowText();
+
+            // Add sparkle effect to subject cards
+            function addSparkleEffect() {
+                document.querySelectorAll('.interactive-card').forEach(card => {
+                    card.addEventListener('mouseenter', function() {
+                        for (let i = 0; i < 6; i++) {
+                            const sparkle = document.createElement('div');
+                            sparkle.innerHTML = '✨';
+                            sparkle.style.position = 'absolute';
+                            sparkle.style.left = Math.random() * 100 + '%';
+                            sparkle.style.top = Math.random() * 100 + '%';
+                            sparkle.style.fontSize = '16px';
+                            sparkle.style.pointerEvents = 'none';
+                            sparkle.style.animation = 'sparkle 1s ease-out forwards';
+                            sparkle.style.zIndex = '10';
+                            
+                            this.appendChild(sparkle);
+                            
+                            setTimeout(() => {
+                                sparkle.remove();
+                            }, 1000);
+                        }
+                    });
+                });
+            }
+            addSparkleEffect();
+        </script>
+    </body>
+</html>
+
