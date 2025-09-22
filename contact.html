@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact • ShikshaSetu</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    </head>
+    <body style="padding-top: 80px;">
+        <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="home.html">
+                    <div class="logo-container"><div class="logo-icon">S</div></div>
+                    <span class="brand-text">ShikshaSetu</span>
+                </a>
+                <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="home.html"><i class="fas fa-home"></i> Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="library.html"><i class="fas fa-book"></i> Library</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html"><i class="fas fa-users"></i> About</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section class="home-hero d-flex align-items-center justify-content-center text-center" style="background-image:url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=2069&auto=format&fit=crop'); background-size:cover; background-position:center;">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 class="home-title">Get in Touch</h1>
+                <p class="home-subtitle">Partner with us to bring learning to every village</p>
+            </div>
+        </section>
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h2 class="contact-title" style="font-family:'Bree Serif', serif;">We would love to hear from you</h2>
+                <div class="section-accent mx-auto"></div>
+                <p class="contact-subtitle">Send us a message and we'll get back to you with magical speed! ✨</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="card shadow-sm border-0 contact-form-card">
+                        <div class="card-body p-4 p-md-5">
+                            <form action="https://formspree.io/f/your-id" method="POST" class="contact-form">
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <div class="floating-label-group">
+                                            <input type="text" name="first_name" class="form-control floating-input" required>
+                                            <label class="floating-label">First Name</label>
+                                            <div class="input-highlight"></div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <div class="floating-label-group">
+                                            <input type="text" name="last_name" class="form-control floating-input" required>
+                                            <label class="floating-label">Last Name</label>
+                                            <div class="input-highlight"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="floating-label-group">
+                                        <input type="email" name="email" class="form-control floating-input" required>
+                                        <label class="floating-label">Email Address</label>
+                                        <div class="input-highlight"></div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="floating-label-group">
+                                        <textarea class="form-control floating-input" name="message" rows="5" required></textarea>
+                                        <label class="floating-label">Your Message</label>
+                                        <div class="input-highlight"></div>
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-primary btn-lg px-5 submit-btn">
+                                        <span class="btn-text">Send Message</span>
+                                        <div class="btn-loader"></div>
+                                        <i class="fas fa-paper-plane btn-icon"></i>
+                                    </button>
+                                </div>
+                                <input type="hidden" name="_subject" value="New contact from ShikshaSetu" />
+                                <input type="hidden" name="_template" value="table" />
+                            </form>
+                            
+                            <!-- Success Message -->
+                            <div class="success-message">
+                                <div class="success-icon">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <h4>Message Sent Successfully!</h4>
+                                <p>Thank you for reaching out. We'll get back to you soon! 🎉</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-4 mt-lg-0">
+                    <div class="card info-card mb-3 p-4">
+                        <div class="icon-circle icon-grad-4 mb-3"><i class="fas fa-phone"></i></div>
+                        <h6 class="mb-1">Phone</h6>
+                        <p class="mb-0">+91 90000 00000</p>
+                    </div>
+                    <div class="card info-card mb-3 p-4">
+                        <div class="icon-circle icon-grad-2 mb-3"><i class="fas fa-envelope"></i></div>
+                        <h6 class="mb-1">Email</h6>
+                        <p class="mb-0">hello@shikshasetu.org</p>
+                    </div>
+                    <div class="card info-card p-4">
+                        <div class="icon-circle icon-grad-3 mb-3"><i class="fas fa-map-marker-alt"></i></div>
+                        <h6 class="mb-1">Address</h6>
+                        <p class="mb-0">Village Rd, District, State, India</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="site-footer mt-5">
+            <div class="container py-4">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <h5 class="mb-1" style="font-family:'Bree Serif', serif;">ShikshaSetu</h5>
+                        <small>Smart education for rural India • Classes 6–12</small>
+                    </div>
+                    <div class="col-md-6 text-md-right mt-3 mt-md-0 social">
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        
+        <script>
+            // Floating label animations
+            document.querySelectorAll('.floating-input').forEach(input => {
+                input.addEventListener('focus', function() {
+                    this.parentElement.classList.add('focused');
+                    this.parentElement.querySelector('.input-highlight').style.width = '100%';
+                });
+                
+                input.addEventListener('blur', function() {
+                    if (!this.value) {
+                        this.parentElement.classList.remove('focused');
+                        this.parentElement.querySelector('.input-highlight').style.width = '0%';
+                    }
+                });
+                
+                // Check if input has value on load
+                if (input.value) {
+                    input.parentElement.classList.add('focused');
+                }
+            });
+
+            // Form submission with loading animation
+            document.querySelector('.contact-form').addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const submitBtn = document.querySelector('.submit-btn');
+                const btnText = submitBtn.querySelector('.btn-text');
+                const btnLoader = submitBtn.querySelector('.btn-loader');
+                const btnIcon = submitBtn.querySelector('.btn-icon');
+                
+                // Show loading state
+                submitBtn.classList.add('loading');
+                btnText.textContent = 'Sending...';
+                btnLoader.style.display = 'block';
+                btnIcon.style.display = 'none';
+                
+                // Simulate form submission (replace with actual form handling)
+                setTimeout(() => {
+                    // Show success message
+                    document.querySelector('.contact-form').style.display = 'none';
+                    document.querySelector('.success-message').style.display = 'block';
+                    
+                    // Create confetti effect
+                    createConfetti();
+                    
+                    // Reset button after 3 seconds
+                    setTimeout(() => {
+                        submitBtn.classList.remove('loading');
+                        btnText.textContent = 'Send Message';
+                        btnLoader.style.display = 'none';
+                        btnIcon.style.display = 'inline-block';
+                    }, 3000);
+                }, 2000);
+            });
+
+            // Confetti effect
+            function createConfetti() {
+                const colors = ['#feca57', '#ff9ff3', '#667eea', '#43e97b', '#f093fb'];
+                
+                for (let i = 0; i < 50; i++) {
+                    const confetti = document.createElement('div');
+                    confetti.style.position = 'fixed';
+                    confetti.style.left = Math.random() * window.innerWidth + 'px';
+                    confetti.style.top = '-10px';
+                    confetti.style.width = '10px';
+                    confetti.style.height = '10px';
+                    confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                    confetti.style.borderRadius = '50%';
+                    confetti.style.pointerEvents = 'none';
+                    confetti.style.zIndex = '9999';
+                    confetti.style.animation = `confettiFall ${Math.random() * 3 + 2}s linear forwards`;
+                    
+                    document.body.appendChild(confetti);
+                    
+                    setTimeout(() => {
+                        confetti.remove();
+                    }, 5000);
+                }
+            }
+
+            // Cursor trail effect
+            let mouseX = 0, mouseY = 0;
+            document.addEventListener('mousemove', function(e) {
+                mouseX = e.clientX;
+                mouseY = e.clientY;
+                
+                const trail = document.createElement('div');
+                trail.style.position = 'fixed';
+                trail.style.left = mouseX + 'px';
+                trail.style.top = mouseY + 'px';
+                trail.style.width = '12px';
+                trail.style.height = '12px';
+                trail.style.background = 'radial-gradient(circle, rgba(102, 126, 234, 0.8), transparent)';
+                trail.style.borderRadius = '50%';
+                trail.style.pointerEvents = 'none';
+                trail.style.zIndex = '9999';
+                trail.style.animation = 'cursorPulse 0.6s ease-out forwards';
+                
+                document.body.appendChild(trail);
+                
+                setTimeout(() => {
+                    trail.remove();
+                }, 600);
+            });
+
+            // Animate contact info cards on scroll
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.animation = 'slideInUp 0.6s ease-out forwards';
+                    }
+                });
+            });
+
+            document.querySelectorAll('.info-card').forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(30px)';
+                observer.observe(card);
+            });
+
+            // Page load animations
+            window.addEventListener('load', function() {
+                // Animate title
+                const title = document.querySelector('.contact-title');
+                title.style.opacity = '0';
+                title.style.transform = 'translateY(30px)';
+                setTimeout(() => {
+                    title.style.transition = 'all 0.8s ease-out';
+                    title.style.opacity = '1';
+                    title.style.transform = 'translateY(0)';
+                }, 300);
+
+                // Animate form card
+                const formCard = document.querySelector('.contact-form-card');
+                formCard.style.opacity = '0';
+                formCard.style.transform = 'translateY(50px) scale(0.9)';
+                setTimeout(() => {
+                    formCard.style.transition = 'all 0.8s ease-out';
+                    formCard.style.opacity = '1';
+                    formCard.style.transform = 'translateY(0) scale(1)';
+                }, 600);
+            });
+
+            // Add sparkle effect to info cards
+            document.querySelectorAll('.info-card').forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    for (let i = 0; i < 5; i++) {
+                        const sparkle = document.createElement('div');
+                        sparkle.innerHTML = '✨';
+                        sparkle.style.position = 'absolute';
+                        sparkle.style.left = Math.random() * 100 + '%';
+                        sparkle.style.top = Math.random() * 100 + '%';
+                        sparkle.style.fontSize = '14px';
+                        sparkle.style.pointerEvents = 'none';
+                        sparkle.style.animation = 'sparkle 1s ease-out forwards';
+                        sparkle.style.zIndex = '10';
+                        
+                        this.appendChild(sparkle);
+                        
+                        setTimeout(() => {
+                            sparkle.remove();
+                        }, 1000);
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>
